@@ -29,16 +29,16 @@ In large-scale microservice architectures, manually tracking hundreds of service
 
 ### High-Level Architecture
 ```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   REST Client   │───▶│  CDI Eureka      │───▶│  Eureka Server  │
-│                 │    │  Service         │    │                 │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                       ┌──────────────┐
-                       │  Grouped     │
-                       │  Response    │
-                       └──────────────┘
++-----------------+    +------------------+    +-----------------+
+|   REST Client   | -> |  CDI Eureka      | -> |  Eureka Server  |
+|                 |    |  Service         |    |                 |
++-----------------+    +------------------+    +-----------------+
+                             |
+                             v
+                      +----------------+
+                      |  Grouped       |
+                      |  Response      |
+                      +----------------+
 ```
 
 ### Layered Architecture
