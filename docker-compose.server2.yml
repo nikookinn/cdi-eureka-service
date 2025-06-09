@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+  eureka2:
+    build:
+      context: ./eureka-server
+    container_name: eureka2
+    ports:
+      - "8762:8761"
+    environment:
+      - PORT=8761
+      - HOSTNAME=server-2
+      - EUREKA_URLS=http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
+    networks:
+      - eureka-shared-network
+      - eureka-network-2
+
+  service-a-2:
+    build:
+      context: ./example-service-a
+    environment:
+      - HOSTNAME=server-2
+      - EUREKA_URLS=http://eureka2:8761/eureka/,http://eureka1:8761/eureka/
+    depends_on:
+      - eureka2
+    networks:
+      - eureka-network-2
+
+  service-b-2:
+    build:
+      context: ./example-service-b
+    environment:
+      - HOSTNAME=server-2
+      - EUREKA_URLS=http://eureka2:8761/eureka/,http://eureka1:8761/eureka/
+    depends_on:
+      - eureka2
+    networks:
+      - eureka-network-2
+
+
+networks:
+  eureka-network-2:
+    driver: bridge
+  eureka-shared-network:
+    external: true

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: example-service-b
+eureka:
+  instance:
+    hostname: ${HOSTNAME}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_URLS}
+
+server:
+  port: 0

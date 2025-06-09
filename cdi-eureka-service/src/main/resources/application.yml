@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cdi-eureka-service
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8761/eureka/
+
+server:
+  port: 8080
+
+
+
+
+

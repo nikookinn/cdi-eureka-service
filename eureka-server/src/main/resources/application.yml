@@ -1,0 +1,15 @@
+spring:
+  application:
+    name : eureka-server
+eureka:
+  instance:
+    hostname: ${HOSTNAME}
+  server:
+    enable-self-preservation: false
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_URLS}
+server:
+  port: ${PORT:8761}
