@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ed0f875-9a9b-4c09-9983-7b65c8642aa8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "21",
     "last_opened_file_path": "C:/Users/user/MyProjects/eureka-cdi-service/cdi-eureka-service/build.gradle",
     "node.js.detected.package.eslint": "true",
@@ -285,7 +287,7 @@
       <updated>1748634273998</updated>
       <workItem from="1748634275040" duration="28000" />
       <workItem from="1748634358566" duration="135919000" />
-      <workItem from="1749416343431" duration="2367000" />
+      <workItem from="1749416343431" duration="6816000" />
     </task>
     <servers />
   </component>
