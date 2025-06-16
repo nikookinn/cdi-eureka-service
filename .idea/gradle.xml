@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cdi-eureka-service" />
+        <option name="gradleHome" value="$USER_HOME$/gradle/gradle-8.14" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/cdi-eureka-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka-server" />
+        <option name="gradleHome" value="$USER_HOME$/gradle/gradle-8.14" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/eureka-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/example-service-a" />
+        <option name="gradleHome" value="$USER_HOME$/gradle/gradle-8.14" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/example-service-a" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/example-service-b" />
+        <option name="gradleHome" value="$USER_HOME$/gradle/gradle-8.14" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/example-service-b" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+    <option name="offlineMode" value="true" />
+  </component>
+</project>

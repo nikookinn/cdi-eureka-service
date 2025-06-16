@@ -6,6 +6,7 @@ import com.dafreurekadetails.dto.response.ReturnCode;
 import com.dafreurekadetails.logger.AppLogger;
 import org.slf4j.MDC;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -40,6 +41,20 @@ public class GlobalHandlerException {
         EurekaQueryResponse<GroupedResult> response = EurekaQueryResponse.from(
                 ReturnCode.INVALID_REQUEST,
                 sb.toString(),
+                transactionId,
+                0,
+                null
+        );
+
+        return ResponseEntity.badRequest().body(response);
+    }
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<EurekaQueryResponse<GroupedResult>> handleMalformedJson(HttpMessageNotReadableException ex) {
+        String transactionId = getTransactionId();
+
+        EurekaQueryResponse<GroupedResult> response = EurekaQueryResponse.from(
+                ReturnCode.INVALID_REQUEST,
+                "Malformed JSON request body",
                 transactionId,
                 0,
                 null

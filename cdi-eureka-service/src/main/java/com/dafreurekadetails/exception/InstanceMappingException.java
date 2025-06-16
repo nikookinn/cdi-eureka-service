@@ -10,4 +10,10 @@ public class InstanceMappingException extends ApiException {
                 cause
         );
     }
+    public InstanceMappingException(String message) {
+        super(
+                ReturnCode.INVALID_REQUEST,
+                message
+        );
+    }
 }

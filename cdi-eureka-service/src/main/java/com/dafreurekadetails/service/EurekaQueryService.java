@@ -28,7 +28,7 @@ public class EurekaQueryService {
         this.eurekaService = eurekaService;
     }
 
-    public EurekaQueryResponse<? extends GroupedResult> handleQuery(String groupBy, String eurekaURL) {
+    public EurekaQueryResponse<GroupedResult> handleQuery(String groupBy, String eurekaURL) {
         long startTime = System.currentTimeMillis();
         String transactionId = (String) RequestContextHolder.getRequestAttributes()
                 .getAttribute("transactionId", RequestAttributes.SCOPE_REQUEST);
@@ -59,6 +59,9 @@ public class EurekaQueryService {
     }
 
     private void validateEurekaURL(String url) {
+        if (url == null) {
+            throw new InvalidRequestException("Invalid URL format: null");
+        }
         try {
             URI uri = new URI(url);
 

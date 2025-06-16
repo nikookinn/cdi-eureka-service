@@ -11,7 +11,10 @@ public class GroupingStrategyFactory {
     public GroupingStrategyFactory(Map<String, GroupingStrategy> strategies) {
         this.strategies = strategies;
     }
-    public GroupingStrategy resolve(String groupBy){
-        return strategies.getOrDefault(groupBy,strategies.get("servers"));
+    public GroupingStrategy resolve(String groupBy) {
+        if (groupBy == null || !strategies.containsKey(groupBy)) {
+            return strategies.get("servers");
+        }
+        return strategies.get(groupBy);
     }
 }

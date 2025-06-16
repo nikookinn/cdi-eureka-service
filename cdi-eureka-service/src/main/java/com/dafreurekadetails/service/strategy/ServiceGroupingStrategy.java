@@ -33,8 +33,6 @@ public class ServiceGroupingStrategy implements GroupingStrategy {
 
     @Override
     public GroupedResult group(String eurekaServerUrl) {
-        Objects.requireNonNull(eurekaServerUrl, "Eureka server URL cannot be null");
-
         if (!StringUtils.hasText(eurekaServerUrl)) {
             throw new InvalidRequestException("Eureka server URL cannot be null or blank");
         }
@@ -126,7 +124,7 @@ public class ServiceGroupingStrategy implements GroupingStrategy {
                     result.add(new ServerInstance(sid));
                 }
 
-            } catch (Exception ex) {
+            } catch (ApiException ex) {
                 APP_LOGGER.warn("Error mapping instance for service {}: {}", instance.path("instanceId").asText(), ex.getMessage());
                 throw new InstanceMappingException(instance.path("instanceId").asText("unknown"),ex);
             }

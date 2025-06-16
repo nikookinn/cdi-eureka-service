@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ed0f875-9a9b-4c09-9983-7b65c8642aa8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/controller/EurekaQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/controller/EurekaQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/GlobalHandlerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/GlobalHandlerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/InstanceMappingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/InstanceMappingException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/DafEurekaDetailsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/DafEurekaDetailsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +46,12 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/DAF-EurekaDetails">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/cdi-eureka-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/eureka-server">
           <activation />
         </task>
         <projects_view>
@@ -71,31 +89,30 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "C:/Users/user/MyProjects/eureka-cdi-service/cdi-eureka-service/build.gradle",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6632184",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/MyProjects/eureka-cdi-service/example-service-b/build.gradle&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6632184&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -117,10 +134,58 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CdiEurekaServiceApplication">
-    <configuration name="DAF-EurekaDetails [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EurekaQueryServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/DAF-EurekaDetails" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cdi-eureka-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.dafreurekadetails.service.EurekaQueryServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="EurekaServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cdi-eureka-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.dafreurekadetails.service.EurekaServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cdi-eureka-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cdi-eureka-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -128,7 +193,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -139,10 +204,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DAF-EurekaDetails [tasks]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="cdi-eureka-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/DAF-EurekaDetails" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cdi-eureka-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -150,7 +215,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="tasks" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,76 +226,26 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="EurekaClientTest.shouldFetchEurekaAppsSuccessfully" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="cdi-eureka-service [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/DAF-EurekaDetails" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/cdi-eureka-service" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.dafreurekadetails.client.EurekaClientTest.shouldFetchEurekaAppsSuccessfully&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupingStrategyFactoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/DAF-EurekaDetails" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.dafreurekadetails.strategy.GroupingStrategyFactoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ServerGroupingStrategyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/DAF-EurekaDetails" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.dafreurekadetails.strategy.ServerGroupingStrategyTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="CdiEurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -269,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DAF-EurekaDetails [tasks]" />
-        <item itemvalue="Gradle.DAF-EurekaDetails [dependencies]" />
-        <item itemvalue="Gradle.EurekaClientTest.shouldFetchEurekaAppsSuccessfully" />
-        <item itemvalue="Gradle.ServerGroupingStrategyTest" />
-        <item itemvalue="Gradle.GroupingStrategyFactoryTest" />
+        <item itemvalue="Gradle.cdi-eureka-service [build]" />
+        <item itemvalue="Gradle.cdi-eureka-service [clean]" />
+        <item itemvalue="Gradle.cdi-eureka-service [test]" />
+        <item itemvalue="Gradle.EurekaQueryServiceTest" />
+        <item itemvalue="Gradle.EurekaServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -287,12 +302,30 @@
       <updated>1748634273998</updated>
       <workItem from="1748634275040" duration="28000" />
       <workItem from="1748634358566" duration="135919000" />
-      <workItem from="1749416343431" duration="6816000" />
+      <workItem from="1749416343431" duration="7540000" />
+      <workItem from="1749901846167" duration="41000" />
+      <workItem from="1749901916474" duration="212000" />
+      <workItem from="1749902135438" duration="9000" />
+      <workItem from="1749902160319" duration="122000" />
+      <workItem from="1749902363320" duration="335000" />
+      <workItem from="1749902750017" duration="69091000" />
+      <workItem from="1750091570084" duration="4618000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -300,7 +333,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/controller/EurekaQueryController.java</url>
           <line>24</line>
-          <properties class="com.dafreurekadetails.controller.EurekaQueryController" method="getApps">
+          <properties class="com.dafreurekadetails.controller.EurekaQueryController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -309,7 +342,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/EurekaService.java</url>
           <line>15</line>
-          <properties class="com.dafreurekadetails.service.EurekaService" method="group">
+          <properties class="com.dafreurekadetails.service.EurekaService">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -327,7 +360,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
           <line>34</line>
-          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="group">
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -336,7 +369,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
           <line>34</line>
-          <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="group">
+          <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -345,7 +378,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
           <line>63</line>
-          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="extractInstancesByHost">
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -354,7 +387,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
           <line>78</line>
-          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="processApplicationNode">
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -363,7 +396,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
           <line>94</line>
-          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="addInstance">
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -372,7 +405,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
           <line>123</line>
-          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="buildServerGroups">
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -381,7 +414,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/mapper/InstanceMapper.java</url>
           <line>15</line>
-          <properties class="com.dafreurekadetails.mapper.InstanceMapper" method="mapToBaseInstanceDetail">
+          <properties class="com.dafreurekadetails.mapper.InstanceMapper">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -390,7 +423,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java</url>
           <line>30</line>
-          <properties class="com.dafreurekadetails.service.EurekaQueryService" method="handleQuery">
+          <properties class="com.dafreurekadetails.service.EurekaQueryService">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -399,11 +432,164 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java</url>
           <line>60</line>
-          <properties class="com.dafreurekadetails.service.EurekaQueryService" method="validateEurekaURL">
+          <properties class="com.dafreurekadetails.service.EurekaQueryService">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
+          <line>34</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="group">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
+          <line>62</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="extractInstancesByHost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
+          <line>77</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="processApplicationNode">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
+          <line>93</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="addInstance">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
+          <line>122</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="buildServerGroups">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
+          <line>34</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="group">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
+          <line>72</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="processApplications">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
+          <line>81</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="processApplication">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
+          <line>107</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="singletonArray">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
+          <line>113</line>
+          <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="buildServerInstances">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaClientHelper.java</url>
+          <line>27</line>
+          <properties class="com.dafreurekadetails.service.EurekaClientHelper" method="getEurekaApps">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java</url>
+          <line>60</line>
+          <properties class="com.dafreurekadetails.service.EurekaQueryService" method="validateEurekaURL">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaService.java</url>
+          <line>15</line>
+          <properties class="com.dafreurekadetails.service.EurekaService" method="group">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/service/EurekaServiceTest.java</url>
+          <line>40</line>
+          <properties class="com.dafreurekadetails.service.EurekaServiceTest" method="group_ShouldUseCorrectStrategyAndReturnResult">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/controller/EurekaQueryControllerTest.java</url>
+          <line>52</line>
+          <properties class="com.dafreurekadetails.controller.EurekaQueryControllerTest" method="shouldSuccessfullyGetAppsWithServersGroupBy">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/controller/EurekaQueryControllerTest.java</url>
+          <line>83</line>
+          <properties class="com.dafreurekadetails.controller.EurekaQueryControllerTest" method="shouldSuccessfullyGetAppsWithServicesGroupBy">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java</url>
+          <line>30</line>
+          <properties class="com.dafreurekadetails.service.EurekaQueryService" method="handleQuery">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
@@ -415,7 +601,35 @@
           <line>13</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategyFactory.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaClientHelper.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/service/EurekaServiceTest.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.dafreurekadetails.service.strategy.GroupingStrategy$MockitoMock$jv5pq2MI" memberName="mockitoInterceptor" />
+        <PinnedItemInfo parentTag="com.fasterxml.jackson.databind.ObjectMapper" memberName="_jsonFactory" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/eureka_cdi_service$ServerGroupingStrategyTest.ic" NAME="ServerGroupingStrategyTest Coverage Results" MODIFIED="1749912493868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -48,7 +48,6 @@ public class ServerGroupingStrategy implements GroupingStrategy {
             Map<String, List<ServiceInstance>> byHost = extractInstancesByHost(root);
             List<ServerGroup> groups = buildServerGroups(byHost);
 
-            APP_LOGGER.info("Grouped {} hosts into {} server groups", byHost.size(), groups.size());
             return new ServerResult(groups);
 
         }catch (ApiException ex){
@@ -115,7 +114,7 @@ public class ServerGroupingStrategy implements GroupingStrategy {
             byHost.computeIfAbsent(hostname, h -> new ArrayList<>()).add(si);
             APP_LOGGER.trace("Added service {} to host {}", serviceName, hostname);
 
-        } catch (Exception ex) {
+        } catch (ApiException ex) {
             APP_LOGGER.warn("Error mapping instance for server {}: {}", serviceName, ex.getMessage());
             throw new InstanceMappingException("Failed to map instance for service: " + serviceName,ex);
         }

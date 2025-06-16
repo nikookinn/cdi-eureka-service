@@ -439,7 +439,5 @@ Each request receives a unique transaction ID that appears in all related log en
 > **Note**: Comprehensive unit and integration tests are planned for the next development phase.
 
 ### Planned Test Coverage
-- **Unit Tests**: Individual component testing with Mockito
 - **Integration Tests**: End-to-end API testing
-- **Error Handling Tests**: Exception scenarios and edge cases
 - **Performance Tests**: Load testing with multiple Eureka instances

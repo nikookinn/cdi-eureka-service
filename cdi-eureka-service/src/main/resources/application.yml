@@ -8,12 +8,13 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8762/eureka/
 
 server:
   port: 8080
 
-
-
-
-
+logging:
+  level:
+    com.netflix.discovery.DiscoveryClient: info
+    com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient: warn
+    com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient: warn

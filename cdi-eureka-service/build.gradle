@@ -15,11 +15,10 @@ java {
 
 repositories {
 	mavenCentral()
-	maven { url 'https://repo.spring.io/milestone' }
 }
 
 ext {
-	set('springCloudVersion', "2025.0.0-RC1")
+	set('springCloudVersion', "2025.0.0")
 }
 
 dependencies {
