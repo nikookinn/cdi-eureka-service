@@ -2,8 +2,7 @@
 
 ![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0+-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
-![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
 
 ## Introduction
 
@@ -30,16 +29,16 @@ In large-scale microservice architectures, manually tracking hundreds of service
 
 ### High-Level Architecture
 ```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   REST Client   │───▶│  CDI Eureka      │───▶│  Eureka Server  │
-│                 │    │  Service         │    │                 │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                       ┌──────────────┐
-                       │  Grouped     │
-                       │  Response    │
-                       └──────────────┘
++-----------------+    +------------------+    +-----------------+
+|   REST Client   | -> |  CDI Eureka      | -> |  Eureka Server  |
+|                 |    |  Service         |    |                 |
++-----------------+    +------------------+    +-----------------+
+                             |
+                             v
+                      +----------------+
+                      |  Grouped       |
+                      |  Response      |
+                      +----------------+
 ```
 
 ### Layered Architecture
