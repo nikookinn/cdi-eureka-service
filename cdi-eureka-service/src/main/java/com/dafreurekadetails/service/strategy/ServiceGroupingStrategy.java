@@ -18,7 +18,16 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.util.*;
-
+/**
+ * ServiceGroupingStrategy is a grouping strategy implementation that groups service instances
+ * registered in a Eureka server by their service names.
+ * <p>
+ * It retrieves all applications from the given Eureka server URL, processes each service (application),
+ * and collects its instances. Each group in the final result corresponds to a single service name,
+ * containing all its instances (servers).
+ * <p>
+ * This strategy is triggered when the grouping type is "services".
+ */
 @Component("services")
 public class ServiceGroupingStrategy implements GroupingStrategy {
 
@@ -30,7 +39,15 @@ public class ServiceGroupingStrategy implements GroupingStrategy {
         this.eurekaClient = Objects.requireNonNull(eurekaClient, "EurekaClientHelper cannot be null");
         this.mapper = Objects.requireNonNull(mapper, "InstanceMapper cannot be null");
     }
-
+    /**
+     * Groups service instances retrieved from the Eureka server by their service names.
+     *
+     * @param eurekaServerUrl the URL of the Eureka server
+     * @return a grouped result containing all services and their corresponding instances
+     * @throws InvalidRequestException     if the input URL is null or empty
+     * @throws ServiceUnavailableException if the Eureka server does not respond
+     * @throws GroupingException           if grouping fails due to unexpected errors
+     */
     @Override
     public GroupedResult group(String eurekaServerUrl) {
         if (!StringUtils.hasText(eurekaServerUrl)) {
@@ -64,12 +81,23 @@ public class ServiceGroupingStrategy implements GroupingStrategy {
             throw new GroupingException("Failed to group by service :"+eurekaServerUrl,ex);
         }
     }
-
+    /**
+     * Extracts the "application" array node from the Eureka response JSON.
+     *
+     * @param root the root JSON node returned by the Eureka server
+     * @return an ArrayNode containing all registered applications; null if not found
+     */
     private ArrayNode extractApplicationsArray(JsonNode root) {
         JsonNode appsNode = root.path("applications").path("application");
         return appsNode.isArray() ? (ArrayNode) appsNode : null;
     }
-
+    /**
+     * Processes the list of applications (services) returned by Eureka.
+     * For each application, it builds a ServiceGroup containing all its instances.
+     *
+     * @param apps the array of applications from Eureka
+     * @return a list of ServiceGroup objects
+     */
     private List<ServiceGroup> processApplications(ArrayNode apps) {
         List<ServiceGroup> groups = new ArrayList<>();
         for (JsonNode app : apps) {
@@ -78,7 +106,12 @@ public class ServiceGroupingStrategy implements GroupingStrategy {
         }
         return groups;
     }
-
+    /**
+     * Processes a single application node, extracting the service name and all its instances.
+     *
+     * @param app the JSON node representing a single application
+     * @return a ServiceGroup object containing all server instances for this service; null if invalid
+     */
     private ServiceGroup processApplication(JsonNode app) {
         String serviceName = app.path("name").asText();
         if (!StringUtils.hasText(serviceName)) {
@@ -104,13 +137,24 @@ public class ServiceGroupingStrategy implements GroupingStrategy {
                 new ServiceDetail(serviceName, servers)
         );
     }
-
+    /**
+     * Wraps a single instance node in an ArrayNode, useful when Eureka returns a single instance
+     * instead of an array.
+     *
+     * @param node the instance node to wrap
+     * @return an ArrayNode containing the node
+     */
     private ArrayNode singletonArray(JsonNode node) {
         ArrayNode arr = JsonNodeFactory.instance.arrayNode();
         arr.add(node);
         return arr;
     }
-
+    /**
+     * Builds a list of ServerInstance objects from a list of instance nodes.
+     *
+     * @param instances an array of instance nodes from Eureka
+     * @return a list of ServerInstance objects containing hostname and detailed instance info
+     */
     private List<ServerInstance> buildServerInstances(ArrayNode instances) {
         List<ServerInstance> result = new ArrayList<>();
 
@@ -131,7 +175,13 @@ public class ServiceGroupingStrategy implements GroupingStrategy {
         }
         return result;
     }
-
+    /**
+     * Determines the hostname for an instance. If "hostName" is not available,
+     * it falls back to "ipAddr", and then to "instanceId".
+     *
+     * @param instanceNode the JSON node representing a single instance
+     * @return the determined hostname or a fallback identifier
+     */
     private String determineHostName(JsonNode instanceNode) {
         String host = instanceNode.path("hostName").asText();
         if (!host.isBlank()) return host;

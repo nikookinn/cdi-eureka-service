@@ -5,20 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ed0f875-9a9b-4c09-9983-7b65c8642aa8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdi-eureka-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/controller/EurekaQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/controller/EurekaQueryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/GlobalHandlerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/GlobalHandlerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/InstanceMappingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/exception/InstanceMappingException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/GroupedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/GroupedResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/ServerResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/ServerResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/ServiceResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/ServiceResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/base/BaseInstanceDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/base/BaseInstanceDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/base/LeaseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/base/LeaseInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/base/Metadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/base/Metadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/response/EurekaQueryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/response/EurekaQueryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServerDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServerDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServerGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServiceInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServiceInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServiceInstanceDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/serverdto/ServiceInstanceDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServerInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServerInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServerInstanceDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServerInstanceDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServiceDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServiceDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServiceGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/dto/servicedto/ServiceGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/interceptor/TransactionIdInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/interceptor/TransactionIdInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/logger/AppLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/logger/AppLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/mapper/InstanceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/mapper/InstanceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaClientHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaClientHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/DafEurekaDetailsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/DafEurekaDetailsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +325,9 @@
       <workItem from="1749902160319" duration="122000" />
       <workItem from="1749902363320" duration="335000" />
       <workItem from="1749902750017" duration="69091000" />
-      <workItem from="1750091570084" duration="4618000" />
+      <workItem from="1750091570084" duration="9957000" />
+      <workItem from="1750169229581" duration="11453000" />
+      <workItem from="1750252640422" duration="627000" />
     </task>
     <servers />
   </component>
@@ -440,7 +458,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
-          <line>34</line>
+          <line>51</line>
           <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="group">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -449,7 +467,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
-          <line>62</line>
+          <line>85</line>
           <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="extractInstancesByHost">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -458,7 +476,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
-          <line>77</line>
+          <line>106</line>
           <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="processApplicationNode">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -467,7 +485,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
-          <line>93</line>
+          <line>131</line>
           <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="addInstance">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -476,7 +494,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServerGroupingStrategy.java</url>
-          <line>122</line>
+          <line>166</line>
           <properties class="com.dafreurekadetails.service.strategy.ServerGroupingStrategy" method="buildServerGroups">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -485,7 +503,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
-          <line>34</line>
+          <line>51</line>
           <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="group">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -494,7 +512,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
-          <line>72</line>
+          <line>100</line>
           <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="processApplications">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -503,7 +521,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
-          <line>81</line>
+          <line>114</line>
           <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="processApplication">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -512,7 +530,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
-          <line>107</line>
+          <line>146</line>
           <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="singletonArray">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -521,7 +539,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/ServiceGroupingStrategy.java</url>
-          <line>113</line>
+          <line>157</line>
           <properties class="com.dafreurekadetails.service.strategy.ServiceGroupingStrategy" method="buildServerInstances">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -529,31 +547,13 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaClientHelper.java</url>
-          <line>27</line>
-          <properties class="com.dafreurekadetails.service.EurekaClientHelper" method="getEurekaApps">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java</url>
-          <line>60</line>
+          <line>78</line>
           <properties class="com.dafreurekadetails.service.EurekaQueryService" method="validateEurekaURL">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaService.java</url>
-          <line>15</line>
-          <properties class="com.dafreurekadetails.service.EurekaService" method="group">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/service/EurekaServiceTest.java</url>
@@ -584,7 +584,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaQueryService.java</url>
-          <line>30</line>
+          <line>43</line>
           <properties class="com.dafreurekadetails.service.EurekaQueryService" method="handleQuery">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -600,16 +600,6 @@
           <url>file://$PROJECT_DIR$/DAF-EurekaDetails/src/test/java/com/dafreurekadetails/config/BaseUnitTest.java</url>
           <line>13</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/strategy/GroupingStrategyFactory.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cdi-eureka-service/src/main/java/com/dafreurekadetails/service/EurekaClientHelper.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cdi-eureka-service/src/test/java/com/dafreurekadetails/service/EurekaServiceTest.java</url>

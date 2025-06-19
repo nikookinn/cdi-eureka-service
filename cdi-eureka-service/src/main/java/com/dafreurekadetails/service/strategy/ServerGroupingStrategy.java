@@ -17,7 +17,15 @@ import org.springframework.util.StringUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
-
+/**
+ * ServerGroupingStrategy is a grouping strategy implementation that organizes service instances
+ * by the servers (host machines) on which they are running.
+ * <p>
+ * It fetches all registered service instances from the Eureka server, determines their hosting servers
+ * (using hostName or a fallback identifier), and groups the services under their respective servers.
+ * <p>
+ * This strategy is triggered when the grouping type is set to "servers".
+ */
 @Component("servers")
 public class ServerGroupingStrategy implements GroupingStrategy {
 
@@ -31,6 +39,15 @@ public class ServerGroupingStrategy implements GroupingStrategy {
         this.instanceMapper = Objects.requireNonNull(instanceMapper, "InstanceMapper cannot be null");
     }
 
+    /**
+     * Groups Eureka service instances by server (hostname) for the specified Eureka server URL.
+     *
+     * @param eurekaServerUrl the URL of the Eureka server to query
+     * @return a {@link GroupedResult} containing service instances grouped by server(host)
+     * @throws InvalidRequestException if the provided URL is empty or null
+     * @throws ServiceUnavailableException if the Eureka server does not respond
+     * @throws GroupingException if any unexpected error occurs while grouping the instances
+     */
     @Override
     public GroupedResult group(String eurekaServerUrl) {
         if (!StringUtils.hasText(eurekaServerUrl)) {
@@ -59,6 +76,12 @@ public class ServerGroupingStrategy implements GroupingStrategy {
             throw new GroupingException("Failed to group by server :"+eurekaServerUrl,ex);
         }
     }
+    /**
+     * Extracts and groups service instances from the Eureka JSON response by their hostnames.
+     *
+     * @param root the root JSON node returned by the Eureka server
+     * @return a map where keys are server names(hostnames) and values are lists of {@link ServiceInstance}s running on those hosts
+     */
 
     private Map<String, List<ServiceInstance>> extractInstancesByHost(JsonNode root) {
         Map<String, List<ServiceInstance>> byHost = new HashMap<>();
@@ -75,6 +98,12 @@ public class ServerGroupingStrategy implements GroupingStrategy {
             return byHost;
     }
 
+    /**
+     * Processes a single application node from the Eureka JSON response and populates the host-based grouping map.
+     *
+     * @param appNode the JSON node representing a registered application in Eureka
+     * @param byHost the map to store service instances grouped by host
+     */
     private void processApplicationNode(JsonNode appNode, Map<String, List<ServiceInstance>> byHost) {
         String serviceName = appNode.path("name").asText(null);
         if (!StringUtils.hasText(serviceName)) {
@@ -91,6 +120,15 @@ public class ServerGroupingStrategy implements GroupingStrategy {
         }
     }
 
+    /**
+     * Attempts to map a Eureka instance to an internal {@link ServiceInstance} object
+     * and adds it to the host-based grouping map.
+     *
+     * @param serviceName the name of the service/application
+     * @param instNode the JSON node representing the instance
+     * @param byHost the map to store service instances grouped by host
+     * @throws InstanceMappingException if instance mapping fails due to API or data issues
+     */
     private void addInstance(String serviceName,
                              JsonNode instNode,
                              Map<String, List<ServiceInstance>> byHost) {
@@ -120,6 +158,12 @@ public class ServerGroupingStrategy implements GroupingStrategy {
         }
     }
 
+    /**
+     * Converts the hostname-based instance map into a list of {@link ServerGroup} objects.
+     *
+     * @param byHost the map of service instances grouped by host
+     * @return a list of {@link ServerGroup} each containing details for a specific server and its running services
+     */
     private List<ServerGroup> buildServerGroups(Map<String, List<ServiceInstance>> byHost) {
         return byHost.entrySet().stream()
                 .filter(entry -> !entry.getValue().isEmpty())

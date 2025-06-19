@@ -18,3 +18,5 @@ logging:
     com.netflix.discovery.DiscoveryClient: info
     com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient: warn
     com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient: warn
+
+

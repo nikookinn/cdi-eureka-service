@@ -7,12 +7,21 @@ import com.dafreurekadetails.dto.servicedto.ServiceDetail;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
-
+/**
+ * Utility component responsible for mapping raw JSON from Eureka
+ * into strongly typed Java DTOs like {@link BaseInstanceDetail}, {@link Metadata}, and {@link LeaseInfo}.
+ */
 @Component
 public class InstanceMapper {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
+    /**
+     * Maps a JSON node representing an instance to a {@link BaseInstanceDetail}.
+     *
+     * @param instanceNode the JSON node from Eureka response
+     * @return a mapped {@link BaseInstanceDetail} object
+     */
     public BaseInstanceDetail mapToBaseInstanceDetail(JsonNode instanceNode) {
 
         int port = parsePort(instanceNode.path("port"));
@@ -34,6 +43,8 @@ public class InstanceMapper {
         );
     }
 
+
+    //Handles variations in port representation (either as int, string, or wrapped).
     private int parsePort(JsonNode portNode) {
         if (portNode.isInt() || portNode.isTextual()) {
             return portNode.asInt(0);
@@ -41,12 +52,13 @@ public class InstanceMapper {
         return portNode.path("$").asInt(0);
     }
 
+    //Maps a JSON node to a Metadata object.
     public Metadata mapMetadata(JsonNode node) {
         return node == null || node.isMissingNode()
                 ? null
                 : objectMapper.convertValue(node, Metadata.class);
     }
-
+    //Maps a JSON node to a LeaseInfo object.
     public LeaseInfo mapLeaseInfo(JsonNode node) {
         return node == null || node.isMissingNode()
                 ? null
